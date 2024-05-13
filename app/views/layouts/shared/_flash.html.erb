@@ -1,0 +1,7 @@
+<div id="flash">
+  <% flash.each do |type, msg| %>
+    <div class="is-fullwidth notification <%= type == "alert" ? "is-warning" : "is-success"  %>">
+      <%= msg %>
+    </div>
+  <% end %>
+</div>
